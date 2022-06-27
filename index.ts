@@ -16,11 +16,9 @@ class Piso{
         this.departamentos = [];
         this.nombre = nombre;
     }
-
     pushDepartamento(depa){
         return this.departamentos.push(depa)
     }
-
     getDepartamentos(){
         return this.departamentos;
     }
@@ -41,7 +39,6 @@ class Edificio{
         })
         return buscarPiso?.pushDepartamento(departamento);
     }
-
     getDepartamentosByPiso(nombreDePiso:string){
         const buscarPiso = this.pisos.find(item=>{
             if(item.nombre == nombreDePiso){
@@ -51,9 +48,6 @@ class Edificio{
         return buscarPiso?.getDepartamentos();
     }
 }
-
-
-
 
 
 
